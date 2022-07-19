@@ -46,8 +46,14 @@ public class Game {
         /*
          * Parametre olarak verilen matrisi ekrana basan method
          */
-
+        // Sutun numaralari vermek icin
+        System.out.print(" ");
+        for (int i = 0; i < matris[0].length; i++) {
+            System.out.print(" " + i);
+        }
+        System.out.println();
         for (int i = 0; i < matris.length; i++) {
+            System.out.print(i + " "); // satir numaralarini vermek icin
             for (int j = 0; j < matris[i].length; j++) {
                 System.out.print(matris[i][j] + " ");
             }
