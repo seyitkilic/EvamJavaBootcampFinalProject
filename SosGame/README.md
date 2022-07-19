@@ -1,18 +1,23 @@
-## Getting Started
+# SOS Oyunu
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+* Kare şeklinde nxn kutulardan oluşan bir panelde iki kişi tarafından oynanan bir oyundur.
+* Oyun sırasında her bir kutuya s yada o harflerinden biri yerleştirilir.
+* Oyunun başında hangi oyuncunun hangi harfi yerleştireceği ve kimin başlayacağına karar verilir.
+* Amaç bir harf koyduğumuzda yatayda, dikeyde yada çaprazda SOS kelimesini oluşturmaktır.
+* SOS kelimesini oluşturan oyuncu 1 puan alır ve tekrar harf ekleme hakkı kazanır.
+* Panel üzerinde hiç boş kutu kalmayana kadar oyun oynanır, sonunda en çok puanı alan oyunu kazanır.
 
-## Folder Structure
+## Kurallar
+1. Panel büyüklüğü oyunun en başında konsoldan girdi olarak alınır. Minimum 3x3 maksimum 7x7 büyüklüğünde olmalıdır.
 
-The workspace contains two folders by default, where:
+2. Oyun bir kullanıcı tarafından bilgisayara karşı oynanır.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. Hangi oyuncunun hangi harfi alacağına ve kimin başlayacağına random karar verilir.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4. Oyuncu hangi kutuya harfini girmek istediğini satır ve sütun numarasını konsoldan girerek belli eder.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5. Bilgisayar hangi kutuya harf yazacağına panel üzerindeki boş kutulardan birini random seçerek karar verir.
 
-## Dependency Management
+6. Panele her karakter girişinde panelin güncel hali satır ve sütun numaraları ile birlikte ve oyuncuların puan durumu ekranda gösterilir.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+7. Dolu kutulara harf yazılmasına izin verilmez."
